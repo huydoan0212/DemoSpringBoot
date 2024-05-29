@@ -1,6 +1,6 @@
-package com.example.demo.dto;
+package com.example.demo.dto.request;
 
-public class ProductCreationRequest {
+public class ProductUpdateRequest {
     private String code;
     private String name;
     private String category;

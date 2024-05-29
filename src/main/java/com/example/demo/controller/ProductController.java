@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
 
-import com.example.demo.dto.ProductCreationRequest;
-import com.example.demo.dto.ProductUpdateRequest;
+import com.example.demo.dto.request.ProductCreationRequest;
+import com.example.demo.dto.request.ProductUpdateRequest;
 import com.example.demo.entities.Product;
 import com.example.demo.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
