@@ -1,8 +1,19 @@
-package com.example.demo.model;
+package com.example.demo.entities;
 
-public class Product {
+import jakarta.persistence.*;
+import jdk.jfr.DataAmount;
+import lombok.Data;
 
+import java.io.Serializable;
+
+@Entity
+@Data
+@Table(name = "products")
+public class Product implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private String code;
     private String name;
     private String category;
