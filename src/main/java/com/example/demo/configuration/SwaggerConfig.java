@@ -18,7 +18,7 @@ public class SwaggerConfig {
     @Bean
     public GroupedOpenApi publicApi(@Value("${openapi.service.api-docs}") String apiDocs) {
         return GroupedOpenApi.builder()
-                .group(apiDocs) // /v3/api-docs/api-service
+                .group(apiDocs)
                 .packagesToScan("com.example.demo.controller")
                 .build();
     }
